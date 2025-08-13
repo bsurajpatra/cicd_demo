@@ -18,7 +18,11 @@ public class ArithmeticController {
 	@GetMapping("/sub/{A}/{B}")
 	public String sub(@PathVariable("A") int a, @PathVariable("B") int b)
 	{
-		return "Sub = " + (a-b);
+		return "Subtraction = " + (a-b);
+	}
+	@GetMapping("/mul/{A}/{B}")
+	public String mul(@PathVariable("A") int a, @PathVariable("B") int b){
+		return "Multiplication = " + (a*b);
 	}
 	
 }
